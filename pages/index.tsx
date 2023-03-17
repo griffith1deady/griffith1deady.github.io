@@ -11,10 +11,11 @@ import {
     Icon20TextRightOutline
 } from "@vkontakte/icons";
 import {useRouter} from "next/router";
+import {calculateEars} from "../components/util/DateUtil";
 
 const Home: NextPage = () => {
     const [isDesktop] = useMediaQuery('(min-width: 800px)')
-    const myEars = new Date().getFullYear() - 2006
+    const myEars = calculateEars(new Date("2006/01/10"))
     const router = useRouter()
     return (
         <>

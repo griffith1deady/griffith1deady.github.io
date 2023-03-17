@@ -25,3 +25,14 @@ export type Project = {
   href: string
   image: string
 }
+
+export type AboutCategory = {
+  id: number
+  name: string
+}
+
+export type AboutProperty = {
+  id: number
+  category: number
+  value: string
+}
