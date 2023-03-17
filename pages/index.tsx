@@ -20,7 +20,7 @@ const Home: NextPage = () => {
         <>
             <NextSeo
                 title="s5a4ed1sa7 | Main"
-                description="Я gbms. Люблю решать проблемы кодом и автоматизировать рутинные задачи. Список моих проектов и целей."
+                description="I&apos;m s5a4ed1sa7, a simple guy who loves his job and is always trying new things."
             />
 
             <VStack spacing={12} divider={<StackDivider/>} width="100%">
