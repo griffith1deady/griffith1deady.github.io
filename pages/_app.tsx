@@ -4,8 +4,7 @@ import AppLayout from "../components/layouts/AppLayout";
 import Fonts from "../components/Fonts";
 import theme from "../theme";
 import AnimationLayout from "../components/layouts/AnimationLayout";
-import SeoLayout from "../components/layouts/SeoLayout";
-import {AdaptivityProvider, AppRoot, ConfigProvider, usePlatform} from "@vkontakte/vkui";
+import {AdaptivityProvider, AppRoot, ConfigProvider} from "@vkontakte/vkui";
 import {useEffect} from "react";
 
 function MyApp({Component, pageProps, router}: AppProps) {
@@ -22,11 +21,9 @@ function MyApp({Component, pageProps, router}: AppProps) {
                     <ChakraProvider theme={theme}>
                         <Fonts/>
                         <AppLayout>
-                            <SeoLayout>
-                                <AnimationLayout route={router.route}>
-                                    <Component {...pageProps} />
-                                </AnimationLayout>
-                            </SeoLayout>
+                            <AnimationLayout route={router.route}>
+                                <Component {...pageProps} />
+                            </AnimationLayout>
                         </AppLayout>
                     </ChakraProvider>
                 </AppRoot>

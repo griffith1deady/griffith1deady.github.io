@@ -4,81 +4,222 @@
       "id": 0,
       "type": "programming",
       "name": "Java",
-      "level": "Advanced",
+      "level": "90",
       "description": "My first language, and i really loved it.",
-      "loving": true
+      "stack": [
+        {
+          "name": "Spring",
+          "additional": [
+            {
+              "name": "WebSocket"
+            },
+            {
+              "name": "Reactor"
+            }
+          ]
+        },
+        {
+          "name": "ActiveJ",
+          "additional": [
+            {
+              "name": "Http"
+            },
+            {
+              "name": "Codegen"
+            },
+            {
+              "name": "Inject"
+            }
+          ]
+        },
+        {
+          "name": "HikariCP"
+        },
+        {
+          "name": "HibernateORM"
+        },
+        {
+          "name": "Blade",
+          "additional": [
+            {
+              "name": "Http"
+            },
+            {
+              "name": "ASM"
+            },
+            {
+              "name": "Kit"
+            },
+            {
+              "name": "Anima"
+            },
+            {
+              "name": "ReflectASM"
+            }
+          ]
+        },
+        {
+          "name": "Minecraft",
+          "additional": [
+            {
+              "name": "Netty"
+            },
+            {
+              "name": "ASM"
+            },
+            {
+              "name": "Mixin"
+            },
+            {
+              "name": "Gson"
+            },
+            {
+              "name": "LWJGL"
+            }
+          ]
+        }
+      ]
     },
     {
       "id": 1,
       "type": "programming",
       "name": "Kotlin",
-      "level": "Advanced",
+      "level": "60",
       "description": "I liked it better than Java, used in all my project on JVM.",
-      "loving": true
+      "stack": [
+        {
+          "name": "jimmer"
+        },
+        {
+          "name": "ktor",
+          "additional": [
+            {
+              "name": "websocket"
+            },
+            {
+              "name": "security"
+            }
+          ]
+        },
+        {
+          "name": "kotlinx",
+          "additional": [
+            {
+              "name": "serialization"
+            },
+            {
+              "name": "coroutines"
+            }
+          ]
+        }
+      ]
     },
     {
       "id": 2,
       "type": "programming",
       "name": "TypeScript",
-      "level": "Advanced",
+      "level": "70",
       "description": "Love this language, and all my project's (sites, nodejs, etc..) written only with it.",
-      "loving": true
+      "stack": [
+        {
+          "name": "React",
+          "additional": [
+            {
+              "name": "Chakra UI"
+            },
+            {
+              "name": "Vkontakte UI"
+            },
+            {
+              "name": "Next"
+            }
+          ]
+        },
+        {
+          "name": "Axios"
+        },
+        {
+          "name": "ky"
+        }
+      ]
     },
     {
       "id": 3,
       "type": "programming",
       "name": "Go",
-      "level": "Average",
-      "description": "Interested in this language because it was necessary by my project, GoLang + Wails + JsonRPC.",
-      "loving": true
+      "level": "35",
+      "description": "Interested in this language because it was necessary by my project.",
+      "stack": [
+        {
+          "name": "JsonRPC"
+        },
+        {
+          "name": "Wails V2"
+        },
+        {
+          "name": "STD Json & Files"
+        }
+      ]
     },
     {
       "id": 4,
       "type": "programming",
       "name": "C++",
-      "level": "Basic",
+      "level": "15",
       "description": "Only read-write with stackoverflow, interested this in past because my studies need it.",
-      "loving": false
+      "stack": [
+        {
+          "name": "STD Lib"
+        }
+      ]
     },
     {
       "id": 5,
       "type": "programming",
       "name": "Rust",
-      "level": "Basic",
+      "level": "10",
       "description": "Hate this language because it contains strong typing and compiler :)",
-      "loving": false
+      "stack": [
+        {
+          "name": "Tauri"
+        },
+        {
+          "name": "egui"
+        }
+      ]
     },
     {
       "id": 6,
       "type": "programming",
       "name": "Dart",
-      "level": "Basic",
-      "description": "Only read-write with stackoverflow, worked with it because interested on Flutter in past.",
-      "loving": false
+      "level": "5",
+      "description": "Only read-write with stackoverflow.",
+      "stack": [
+        {
+          "name": "Flutter"
+        }
+      ]
     },
     {
       "id": 7,
       "type": "speaking",
       "name": "English",
-      "level": "Intermediate",
-      "description": "I learned it at school, but i can read and speak it at a basic-intermediate level.",
-      "loving": true
+      "level": "35",
+      "description": "I learned it at school, but i can read and speak it at a basic-intermediate level."
     },
     {
       "id": 8,
       "type": "speaking",
       "name": "Russian",
-      "level": "Advanced",
-      "description": "Hate language, but normally speaking-listen it",
-      "loving": false
+      "level": "80",
+      "description": "Hate language, but normally speaking-listen it"
     },
     {
       "id": 9,
       "type": "speaking",
       "name": "Ukrainian",
-      "level": "Advanced",
-      "description": "Forever and beautiful language by my country",
-      "loving": true
+      "level": "70",
+      "description": "Forever and beautiful language by my country"
     }
   ]
 }

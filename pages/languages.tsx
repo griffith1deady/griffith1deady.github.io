@@ -1,10 +1,9 @@
 import {Language} from "../types";
 import languagesData from "../data/languages/languages.json"
-import {Box, Center, Divider, Flex, Icon, Spacer, Text, VStack} from "@chakra-ui/react";
-import AppBlock from "../components/AppBlock";
-import {Group} from "@vkontakte/vkui";
+import {Box, Center, List} from "@chakra-ui/react";
 import {NextSeo} from "next-seo";
 import React from "react";
+import LanguageItem from "../components/language/LanguageItem";
 
 type LanguagePageProps = {
     languages: Language[]
@@ -23,53 +22,25 @@ const LanguagesPage = ({languages}: LanguagePageProps) => {
 
             <Center py={4} fontSize={24}> Programming </Center>
 
-            <VStack>
+            <List spacing={2}>
                 {languages.filter(lang => lang.type === 'programming').map(language => (
-                    <AppBlock delay={language.id / 10} key={language.id}>
-                        <Group mode={"card"}>
-                            <Box w={"100%"}
-                            >
-                                <Flex>
-                                    <Text fontSize={20}> {language.name} {language.loving ? " 💞 " : " 💔 "} </Text>
-                                    <Spacer/>
-                                    <Text
-                                        fontSize={20}
-                                        opacity={0.7}
-                                        textColor={language.level == 'Advanced' ? "red" : language.level.includes('Basic') ? "gold" : "green"}
-                                    > {language.level} </Text>
-                                </Flex>
-                                <Center fontSize={16}> Description </Center>
-                                <Divider/>
-                                <Text fontSize={16}> {language.description} </Text>
-                            </Box>
-                        </Group>
-                    </AppBlock>
+                    <LanguageItem id={"component"} key={language.id} language={language} stackItems={language.stack}/>
                 ))}
-            </VStack>
+            </List>
 
-            <Center fontSize={24}> Speaking </Center>
-            <VStack py={2}>
-                {languages.filter(lang => lang.type == 'speaking').map(language => (
-                    <AppBlock delay={language.id / 10} key={language.id}>
-                        <Group mode={"card"}>
-                            <Flex width={"100%"}>
-                                <Text> {language.name} {language.loving ? " 💞 " : " 💔 "} </Text>
-                                <Spacer/>
-                                <Text opacity={0.7}
-                                      textColor={language.level == 'Advanced' ? "red" : "green"}> {language.level} </Text>
-                            </Flex>
-                            <Center> Description </Center>
-                            <Text> {language.description} </Text>
-                        </Group>
-                    </AppBlock>
+            <Center fontSize={24} py={4}> Speaking </Center>
+
+            <List spacing={2} py={4}>
+                {languages.filter(lang => lang.type === 'speaking').map(language => (
+                    <LanguageItem id={"component"} key={language.id} language={language}/>
                 ))}
-            </VStack>
+            </List>
         </Box>
     </>
 }
 
 LanguagesPage.getInitialProps = async () => {
-    return { languages: languagesData.data }
+    return {languages: languagesData.data}
 }
 
 export default LanguagesPage

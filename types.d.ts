@@ -4,9 +4,9 @@ export type Language = {
   id: number
   type: string
   name: string
-  level: string
+  level: number
   description: string
-  loving: boolean
+  stack: StackItem[]
 }
 
 export type SocialLink = {
@@ -39,4 +39,9 @@ export type AboutProperty = {
 
 export type Qualities = {
   value: string
+}
+
+export type StackItem = {
+  name: string
+  additional?: StackItem[]
 }
