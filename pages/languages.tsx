@@ -4,6 +4,7 @@ import {Box, Center, List} from "@chakra-ui/react";
 import {NextSeo} from "next-seo";
 import React from "react";
 import LanguageItem from "../components/language/LanguageItem";
+import AppBlock from "../components/AppBlock";
 
 type LanguagePageProps = {
     languages: Language[]
@@ -24,7 +25,9 @@ const LanguagesPage = ({languages}: LanguagePageProps) => {
 
             <List spacing={2}>
                 {languages.filter(lang => lang.type === 'programming').map(language => (
-                    <LanguageItem id={"component"} key={language.id} language={language} stackItems={language.stack}/>
+                    <AppBlock delay={language.id / 5} key={language.id}>
+                        <LanguageItem id={"component"} language={language} stackItems={language.stack}/>
+                    </AppBlock>
                 ))}
             </List>
 
@@ -32,7 +35,9 @@ const LanguagesPage = ({languages}: LanguagePageProps) => {
 
             <List spacing={2} py={4}>
                 {languages.filter(lang => lang.type === 'speaking').map(language => (
-                    <LanguageItem id={"component"} key={language.id} language={language}/>
+                    <AppBlock delay={language.id / 5} key={language.id}>
+                        <LanguageItem id={"component"} language={language}/>
+                    </AppBlock>
                 ))}
             </List>
         </Box>

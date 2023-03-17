@@ -5,6 +5,7 @@ import {FiHexagon} from "react-icons/fi";
 import {HTMLAttributes} from "react";
 import {DiDart} from "react-icons/di";
 import {TbBrandCpp, TbBrandGolang, TbBrandKotlin, TbBrandTypescript} from "react-icons/tb";
+import AppBlock from "../AppBlock";
 
 type LanguageItemProps = {
     language: Language
@@ -23,19 +24,21 @@ const LanguageItem = ({language, stackItems, ...props}: LanguageItemProps) => {
             {stackItems ? <List fontSize={20} py={2}>
                 <SimpleGrid gap={4} columns={[1, null, 3]}>
                     {stackItems.map((stack, index) => (
-                        <ListItem padding={2} key={index} {...props}>
-                            <ListIcon as={FaCodepen} mb={"0.15rem"}/>
-                            {stack.name}
+                        <AppBlock key={index} delay={index / 5}>
+                            <ListItem padding={2} {...props}>
+                                <ListIcon as={FaCodepen} mb={"0.15rem"}/>
+                                {stack.name}
 
-                            {stack.additional ? <Divider my={2}/> : null}
+                                {stack.additional ? <Divider my={2}/> : null}
 
-                            {stack.additional ? stack.additional.map((stack, index) => (
-                                <Box px={4} key={index} maxW={"max-content"}>
-                                    <ListIcon as={FiHexagon} mb={"0.15rem"}/>
-                                    {stack.name}
-                                </Box>
-                            )) : null}
-                        </ListItem>
+                                {stack.additional ? stack.additional.map((stack, index) => (
+                                    <Box px={4} key={index} maxW={"max-content"}>
+                                        <ListIcon as={FiHexagon} mb={"0.15rem"}/>
+                                        {stack.name}
+                                    </Box>
+                                )) : null}
+                            </ListItem>
+                        </AppBlock>
                     ))}
                 </SimpleGrid>
             </List> : null}
