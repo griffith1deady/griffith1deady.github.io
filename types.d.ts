@@ -36,3 +36,7 @@ export type AboutProperty = {
   category: number
   value: string
 }
+
+export type Qualities = {
+  value: string
+}

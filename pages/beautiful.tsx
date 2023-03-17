@@ -1,7 +1,16 @@
-import {Gallery, Group} from "@vkontakte/vkui";
-import {Box, Center, Image, Text, useMediaQuery} from "@chakra-ui/react"
+import {Card, Gallery, Group, SimpleCell} from "@vkontakte/vkui";
+import {Box, Center, Divider, Image, List, ListIcon, ListItem, Text, useMediaQuery, VStack} from "@chakra-ui/react"
 import {NextSeo} from "next-seo";
-const BeautifulPage = () => {
+import {Qualities} from "../types";
+import qualitiesInfo from "../data/beatiful/qualities.json"
+import {MdCheckCircle} from "react-icons/md";
+import { CheckIcon } from "@chakra-ui/icons";
+
+type BeatutifulPageProps = {
+    qualities: Qualities[]
+}
+
+const BeautifulPage = ({ qualities }: BeatutifulPageProps) => {
     const [isDesktop] = useMediaQuery('(min-width: 800px)')
     return <>
         <NextSeo
@@ -29,8 +38,25 @@ const BeautifulPage = () => {
                     <Image alt={""} src={"beatifulGirl6.jpg"}/>
                 </Gallery>
             </Box>
+
+            <Center fontSize={24} padding={4}> Qualities </Center>
+            <Divider/>
+            <List padding={4} py={4} spacing={4}>
+                {qualities.map((qualities, index) => (
+                    <ListItem key={index}>
+                        <Center fontSize={20}>
+                            <ListIcon as={CheckIcon} color={"green"} />
+                            {qualities.value}
+                        </Center>
+                    </ListItem>
+                ))}
+            </List>
         </Group>
     </>
+}
+
+BeautifulPage.getInitialProps = async () => {
+    return { qualities: qualitiesInfo.data }
 }
 
 export default BeautifulPage
