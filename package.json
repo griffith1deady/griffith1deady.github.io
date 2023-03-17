@@ -1,0 +1,37 @@
+{
+  "name": "s5a4ed1sa7",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@chakra-ui/icons": "^2.0.17",
+    "@chakra-ui/react": "^2.4.9",
+    "@emotion/react": "^11.9.0",
+    "@emotion/styled": "^11.8.1",
+    "@vkontakte/icons": "^2.21.0",
+    "@vkontakte/vk-bridge": "^2.7.2",
+    "@vkontakte/vkui": "^5.2.3",
+    "framer-motion": "^8.5.4",
+    "next": "^13.1.6",
+    "next-seo": "^5.4.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-icons": "^4.8.0",
+    "sharp": "^0.31.3",
+    "use-sound": "^4.0.1"
+  },
+  "devDependencies": {
+    "@types/node": "^18.11.18",
+    "@types/react": "^18.0.27",
+    "@types/react-dom": "^18.0.10",
+    "eslint": "^8.33.0",
+    "eslint-config-next": "^13.1.6",
+    "prettier": "^2.6.2",
+    "typescript": "^4.9.4"
+  }
+}

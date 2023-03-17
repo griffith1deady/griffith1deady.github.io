@@ -1,0 +1,20 @@
+﻿{
+  "data": [
+    {
+      "id": "1",
+      "title": "My GH Organization",
+      "ready": true,
+      "href": "https://github.com/UltramarinedProject-ru",
+      "image": "/github.png",
+      "description": "My public GitHub organization of my game project, specifically Minecraft."
+    },
+    {
+      "id": "2",
+      "title": "My website",
+      "ready": false,
+      "href": "/",
+      "image": "/s5a4ed1sa7-site.png",
+      "description": "My personal website, which I do to tell people about myself."
+    }
+  ]
+}

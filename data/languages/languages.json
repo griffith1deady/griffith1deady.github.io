@@ -1,0 +1,84 @@
+{
+  "data": [
+    {
+      "id": 0,
+      "type": "programming",
+      "name": "Java",
+      "level": "Advanced",
+      "description": "My first language, and i really loved it.",
+      "loving": true
+    },
+    {
+      "id": 1,
+      "type": "programming",
+      "name": "Kotlin",
+      "level": "Advanced",
+      "description": "I liked it better than Java, used in all my project on JVM.",
+      "loving": true
+    },
+    {
+      "id": 2,
+      "type": "programming",
+      "name": "TypeScript",
+      "level": "Advanced",
+      "description": "Love this language, and all my project's (sites, nodejs, etc..) written only with it.",
+      "loving": true
+    },
+    {
+      "id": 3,
+      "type": "programming",
+      "name": "Go",
+      "level": "Average",
+      "description": "Interested in this language because it was necessary by my project, GoLang + Wails + JsonRPC.",
+      "loving": true
+    },
+    {
+      "id": 4,
+      "type": "programming",
+      "name": "C++",
+      "level": "Basic",
+      "description": "Only read-write with stackoverflow, interested this in past because my studies need it.",
+      "loving": false
+    },
+    {
+      "id": 5,
+      "type": "programming",
+      "name": "Rust",
+      "level": "Basic",
+      "description": "Hate this language because it contains strong typing and compiler :)",
+      "loving": false
+    },
+    {
+      "id": 6,
+      "type": "programming",
+      "name": "Dart",
+      "level": "Basic",
+      "description": "Only read-write with stackoverflow, worked with it because interested on Flutter in past.",
+      "loving": false
+    },
+    {
+      "id": 7,
+      "type": "speaking",
+      "name": "English",
+      "level": "Intermediate",
+      "description": "I learned it at school, but i can read and speak it at a basic-intermediate level.",
+      "loving": true
+    },
+    {
+      "id": 8,
+      "type": "speaking",
+      "name": "Russian",
+      "level": "Advanced",
+      "description": "Hate language, but normally speaking-listen it",
+      "loving": false
+    },
+    {
+      "id": 9,
+      "type": "speaking",
+      "name": "Ukrainian",
+      "level": "Advanced",
+      "description": "Forever and beautiful language by my country",
+      "loving": true
+    }
+  ]
+}
