@@ -14,7 +14,7 @@ function MyApp({Component, pageProps, router}: AppProps) {
         if (colorMode == 'light') {
             toggleColorMode()
         }
-    }, [colorMode])
+    }, [colorMode, toggleColorMode])
     return (
         <ConfigProvider appearance={"dark"} platform={"ios"}>
             <AdaptivityProvider>

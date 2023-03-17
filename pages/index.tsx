@@ -65,7 +65,7 @@ const Home: NextPage = () => {
                             mode="tertiary"
                             before={<Icon20PinSlashOutline/>}
                             onClick={() => router.push('projects')}
-                        > Project's </Button>
+                        > Project&apos;s </Button>
                         <Button
                             size="l"
                             appearance="accent"

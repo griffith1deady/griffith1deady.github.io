@@ -12,11 +12,11 @@ type ProjectsPageProps = {
 const ProjectsPage = ({projects}: ProjectsPageProps) => {
     return <>
         <NextSeo
-            title="s5a4ed1sa7 | Project's"
-            description="All my project's. All my work."
+            title="s5a4ed1sa7 | Project&apos;s"
+            description="All my project&apos;s. All my work."
         />
 
-        <Group mode={"card"} header={<Center fontSize={24}> My project's </Center>}>
+        <Group mode={"card"} header={<Center fontSize={24}> My project&apos;s </Center>}>
             <SimpleGrid columns={[1, null, 2]} gap={4}>
                 {projects.map(project => (
                     <AppBlock key={project.id} delay={project.id / 10}>
@@ -30,7 +30,7 @@ const ProjectsPage = ({projects}: ProjectsPageProps) => {
                                         opacity={0.7}
                                     > {project.ready ? "Finished" : "In development"} </Text>
                                 </Flex>
-                                <Image rounded={16} src={project.image}/>
+                                <Image alt={""} rounded={16} src={project.image}/>
                                 <Center py={2}> Description </Center>
                                 <Divider/>
                                 <Text padding={2}> {project.description} </Text>

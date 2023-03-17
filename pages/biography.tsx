@@ -15,7 +15,7 @@ const BiographyPage = () => {
             syntax and oop, and went into something deeper, and gained knowledge of many things.
             Class transformation, reflection, and all that stuff.
             I realized one thing from life: I only want to do something global,
-            which will prove to me that I'm worth something :)
+            which will prove to me that I&apos;m worth something :)
         </Text>
     </Group>
 }
