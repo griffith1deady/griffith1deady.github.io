@@ -4,6 +4,7 @@ import {FaDiscord, FaGithub, FaSteam, FaTelegram, FaVk, FaYoutube} from "react-i
 import React from "react";
 import {useRouter} from "next/router";
 import {SocialLink} from "../types";
+import {NextSeo} from "next-seo";
 
 const socialContacts: SocialLink[] = [
     {
@@ -47,45 +48,51 @@ const socialContacts: SocialLink[] = [
 const ContactPage = () => {
     const router = useRouter()
     const [isDesktop] = useMediaQuery('(min-width: 800px)')
-    return <Group mode={"card"} padding={"s"} header={<Center fontSize={24}> All my social links :) </Center>}>
-        <Divider/>
-        <SimpleGrid py={4} columns={3} gap={2}>
-            {socialContacts.map(social => (
-                <Card key={social.name}>
-                    {isDesktop ? (
-                        <Flex w={"100%"} key={social.name}>
-                            <IconButton
-                                rounded={4}
-                                aria-label={social.name}
-                                icon={social.icon}
-                                w={"4rem"}
-                                h={"4rem"}
-                                fontSize={"2rem"}
-                                onClick={() => router.push(social.url)}
-                            />
-                            <Center padding={4} fontSize={20}>{social.name}</Center>
-                        </Flex>
-                    ) : (<IconButton
-                        key={social.name}
-                        rounded={4}
-                        aria-label={social.name}
-                        icon={social.icon}
-                        w={"4rem"}
-                        h={"4rem"}
-                        fontSize={"2rem"}
-                        onClick={() => router.push(social.url)}
-                    />)}
-                </Card>
-            ))}
-        </SimpleGrid>
+    return <>
+        <NextSeo
+            title={"s5a4ed1sa7 | Contact me"}
+            description={"All my social link :)"}
+        />
+        <Group mode={"card"} padding={"s"} header={<Center fontSize={24}> All my social links :) </Center>}>
+            <Divider/>
+            <SimpleGrid py={4} columns={3} gap={2}>
+                {socialContacts.map(social => (
+                    <Card key={social.name}>
+                        {isDesktop ? (
+                            <Flex w={"100%"} key={social.name}>
+                                <IconButton
+                                    rounded={4}
+                                    aria-label={social.name}
+                                    icon={social.icon}
+                                    w={"4rem"}
+                                    h={"4rem"}
+                                    fontSize={"2rem"}
+                                    onClick={() => router.push(social.url)}
+                                />
+                                <Center padding={4} fontSize={20}>{social.name}</Center>
+                            </Flex>
+                        ) : (<IconButton
+                            key={social.name}
+                            rounded={4}
+                            aria-label={social.name}
+                            icon={social.icon}
+                            w={"4rem"}
+                            h={"4rem"}
+                            fontSize={"2rem"}
+                            onClick={() => router.push(social.url)}
+                        />)}
+                    </Card>
+                ))}
+            </SimpleGrid>
 
-        <Center fontSize={24} py={4}> WARNING! </Center>
-        <Divider/>
-        <Text padding={4}>
-            Please have a conscience and patience, and do not write to me just like that.
-            without greetings and other things - immediately go into ignoring, good luck :)
-        </Text>
-    </Group>
+            <Center fontSize={24} py={4}> WARNING! </Center>
+            <Divider/>
+            <Text padding={4}>
+                Please have a conscience and patience, and do not write to me just like that.
+                without greetings and other things - immediately go into ignoring, good luck :)
+            </Text>
+        </Group>
+    </>
 }
 
 export default ContactPage
