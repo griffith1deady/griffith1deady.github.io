@@ -4,7 +4,7 @@ const BeautifulPage = () => {
     const [isDesktop] = useMediaQuery('(min-width: 800px)')
     return <Group mode={"card"} header={<Center fontSize={24}> Beautiful girl! </Center>}>
         <Center py={4}>
-            <Image alt={""} src={"s5a4ed1sa7.github.io/beatifulGirl.jpg"} rounded={360} w={isDesktop ? "500" : "250"} h={ isDesktop ? "500" : "250"}/>
+            <Image alt={""} src={"beatifulGirl.jpg"} rounded={360} w={isDesktop ? "500" : "250"} h={ isDesktop ? "500" : "250"}/>
         </Center>
 
         <Text padding={4} fontSize={20}>
@@ -15,12 +15,12 @@ const BeautifulPage = () => {
 
         <Box padding={4}>
             <Gallery bullets="dark" showArrows>
-                <Image alt={""} src={"s5a4ed1sa7.github.io/beatifulGirl1.jpg"}/>
-                <Image alt={""} src={"s5a4ed1sa7.github.io/beatifulGirl2.jpg"}/>
-                <Image alt={""} src={"s5a4ed1sa7.github.io/beatifulGirl3.jpg"}/>
-                <Image alt={""} src={"s5a4ed1sa7.github.io/beatifulGirl4.jpg"}/>
-                <Image alt={""} src={"s5a4ed1sa7.github.io/beatifulGirl5.jpg"}/>
-                <Image alt={""} src={"s5a4ed1sa7.github.io/beatifulGirl6.jpg"}/>
+                <Image alt={""} src={"beatifulGirl1.jpg"}/>
+                <Image alt={""} src={"beatifulGirl2.jpg"}/>
+                <Image alt={""} src={"beatifulGirl3.jpg"}/>
+                <Image alt={""} src={"beatifulGirl4.jpg"}/>
+                <Image alt={""} src={"beatifulGirl5.jpg"}/>
+                <Image alt={""} src={"beatifulGirl6.jpg"}/>
             </Gallery>
         </Box>
     </Group>
