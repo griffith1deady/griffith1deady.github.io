@@ -43,12 +43,8 @@ const ProjectsPage = ({projects}: ProjectsPageProps) => {
     </>
 }
 
-export async function getServerSideProps() {
-    return {
-        props: {
-            projects: projectData.data
-        }
-    }
+ProjectsPage.getInitialProps = async () => {
+    return { projects: projectData.data }
 }
 
 export default ProjectsPage

@@ -3,6 +3,7 @@ import characteristicData from "../data/bio/characteristics.json"
 import PageHeader from "../components/PageHeader";
 import AppBlock from "../components/AppBlock";
 import {NextSeo} from "next-seo";
+import {NextPage} from "next";
 
 type CharacteristicPageProps = {
     characteristics: { [index: string]: Array<string> };
@@ -62,7 +63,7 @@ const CharacteristicPage = ({characteristics}: CharacteristicPageProps) => {
     );
 }
 
-export async function getServerSideProps() {
+CharacteristicPage.getInitialProps = async () => {
     const characteristics = characteristicData.data
         .map((x) => x.toLowerCase())
         .sort();
@@ -74,10 +75,8 @@ export async function getServerSideProps() {
     });
 
     return {
-        props: {
-            characteristics: result,
-        },
-    };
+        characteristics: result
+    }
 }
 
 export default CharacteristicPage

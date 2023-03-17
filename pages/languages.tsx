@@ -60,12 +60,8 @@ const LanguagesPage = ({languages}: LanguagePageProps) => {
     </Box>
 }
 
-export async function getServerSideProps() {
-    return {
-        props: {
-            languages: languagesData.data
-        }
-    }
+LanguagesPage.getInitialProps = async () => {
+    return { languages: languagesData.data }
 }
 
 export default LanguagesPage
