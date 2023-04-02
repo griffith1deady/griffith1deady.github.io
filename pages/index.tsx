@@ -33,7 +33,7 @@ const Home: NextPage = () => {
                                     <Image
                                         width={"100%"}
                                         height={isDesktop ? 300 : 150}
-                                        src={"https://sadness1rip.github.io/s5a4ed1sa7.github.io/spare.png"}
+                                        src={"https://griffith1deady.github.io/spare.png"}
                                         alt={"bg"}
                                         style={{borderRadius: 16}}
                                     />
