@@ -12,7 +12,7 @@ const FooterComponent = () => {
                 position="absolute">
         <Container maxW={"100%"}>
             <Text align={"center"}>
-                🛠 Builded by <strong> s5a4ed1sa7 </strong> with <strong> Next </strong> / <strong> ChakraUI </strong> & <strong> VKUI </strong>
+                🛠 Builded by <strong> griffith1deady </strong> with <strong> Next </strong> / <strong> ChakraUI </strong> & <strong> VKUI </strong>
             </Text>
         </Container>
     </Box>

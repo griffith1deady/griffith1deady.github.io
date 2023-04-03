@@ -19,7 +19,7 @@ const AppNavBar = () => {
                 <Flex justify="space-between">
                     <AppNavBarLink href={"/"}>
                         <Heading fontSize={28} onClick={() => router.push('/')}>
-                            s5a4ed1sa7
+                            griffith1deady
                         </Heading>
                     </AppNavBarLink>
                 </Flex>

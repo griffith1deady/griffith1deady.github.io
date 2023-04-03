@@ -43,7 +43,7 @@ const Home: NextPage = () => {
                     </Group>
                     <Box>
                         <Heading as="h2" textAlign="center" mb={[4, 0]}>
-                            s5a4ed1sa7 aka sadness1rip
+                            griffith1deady
                         </Heading>
                         <Text align="center" opacity={0.7}>
                             {myEars} y.o male, FullStack developer
