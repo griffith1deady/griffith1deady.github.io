@@ -162,7 +162,7 @@ export default function Home() {
                   </blockquote>
                   <figcaption className="text-center">
                       <span className="font-bold">
-                          @me, sayed that some one year ago :)
+                          @me, sayed that year ago :)
                       </span>
                   </figcaption>
               </figure>
