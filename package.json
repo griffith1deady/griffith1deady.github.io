@@ -1,6 +1,6 @@
 {
-  "name": "s5a4ed1sa7",
-  "version": "1.0.0",
+  "name": "griffith1deady",
+  "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -9,29 +9,37 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@chakra-ui/icons": "^2.0.17",
-    "@chakra-ui/react": "^2.4.9",
-    "@emotion/react": "^11.9.0",
-    "@emotion/styled": "^11.8.1",
-    "@vkontakte/icons": "^2.21.0",
-    "@vkontakte/vk-bridge": "^2.7.2",
-    "@vkontakte/vkui": "^5.2.3",
-    "framer-motion": "^8.5.4",
-    "next": "^13.1.6",
-    "next-seo": "^5.4.0",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-icons": "^4.8.0",
-    "sharp": "^0.31.3",
-    "use-sound": "^4.0.1"
+    "@chakra-ui/react": "^3.2.1",
+    "@emotion/react": "^11.13.5",
+    "@radix-ui/react-accordion": "^1.2.1",
+    "@radix-ui/react-aspect-ratio": "^1.1.0",
+    "@radix-ui/react-avatar": "^1.1.1",
+    "@radix-ui/react-context-menu": "^2.2.2",
+    "@radix-ui/react-hover-card": "^1.1.2",
+    "@radix-ui/react-progress": "^1.1.0",
+    "@radix-ui/react-slot": "^1.1.0",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "embla-carousel-react": "^8.5.1",
+    "lucide-react": "^0.462.0",
+    "next": "14.2.16",
+    "next-themes": "^0.4.3",
+    "react": "^18",
+    "react-dom": "^18",
+    "react-icons": "^5.3.0",
+    "recharts": "^2.13.3",
+    "sonner": "^1.7.0",
+    "tailwind-merge": "^2.5.5",
+    "tailwindcss-animate": "^1.0.7"
   },
   "devDependencies": {
-    "@types/node": "^18.11.18",
-    "@types/react": "^18.0.27",
-    "@types/react-dom": "^18.0.10",
-    "eslint": "^8.33.0",
-    "eslint-config-next": "^13.1.6",
-    "prettier": "^2.6.2",
-    "typescript": "^4.9.4"
+    "typescript": "^5",
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "postcss": "^8",
+    "tailwindcss": "^3.4.1",
+    "eslint": "^8",
+    "eslint-config-next": "14.2.16"
   }
 }
