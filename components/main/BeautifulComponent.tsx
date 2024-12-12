@@ -3,7 +3,6 @@
 import {Box, Center, Container, SimpleGrid, VStack} from "@chakra-ui/react";
 import Image, {StaticImageData} from "next/image";
 import catGif from "@/app/cat.gif";
-import myGirlfriend from "@/app/beatifulGirl.jpg";
 import {Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious} from "@/components/ui/carousel";
 import myGirlfriendOne from "@/app/beatifulGirl1.jpg";
 import myGirlfriendTwo from "@/app/beatifulGirl2.jpg";
@@ -125,7 +124,7 @@ export default function BeautifulComponent() {
         Beautiful girl!
       </h2>
       <VStack>
-        <Image src={myGirlfriend} alt='my-girlfriend' className='rounded-[16px] max-w-[300px] max-h-[300px]'/>
+        <video src='/beautiful.mp4' autoPlay loop muted className='rounded-[16px] max-w-[300px] max-h-[300px]'/>
         <Box padding={4} className='text-center'>
           <h2 className='font-bold text-[2.25rem] text-foreground'>
             d-i, aka shin-a aka @garaset
